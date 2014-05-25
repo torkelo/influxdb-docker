@@ -1,6 +1,6 @@
-# influxdb 
+# influxdb
 
-FROM debian:jessie
+FROM ubuntu
 
 RUN mkdir -p /opt/influxdb/shared/data
 
