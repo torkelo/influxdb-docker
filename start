@@ -6,5 +6,6 @@ docker rm influxdb
 docker run -d \
 	-p 8083:8083 \
   -p 8086:8086 \
+  -p 2004:2004 \
   -v /var/docker/influxdb:/opt/influxdb/shared/data \
   --name influxdb torkelo/influxdb
