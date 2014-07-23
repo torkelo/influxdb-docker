@@ -4,7 +4,7 @@ FROM ubuntu
 
 RUN mkdir -p /opt/influxdb/shared/data
 
-ADD http://s3.amazonaws.com/influxdb/influxdb_latest_amd64.deb /influxdb_latest_amd64.deb
+ADD http://s3.amazonaws.com/influxdb/influxdb_0.8.0-rc.3_amd64.deb /influxdb_latest_amd64.deb
 RUN dpkg -i /influxdb_latest_amd64.deb
 RUN rm -rf /opt/influxdb/shared/data
 
