@@ -1,11 +1,11 @@
 #! /bin/bash
 
-docker kill influxdb
-docker rm influxdb
+docker kill influxdb09
+docker rm influxdb09
 
 docker run -d \
-	-p 8083:8083 \
-  -p 8086:8086 \
-  -p 2004:2004 \
+	-p 9083:8083 \
+  -p 9086:8086 \
+  -p 9004:2004 \
   -v /var/docker/influxdb:/opt/influxdb/shared/data \
-  --name influxdb torkelo/influxdb
+  --name influxdb09 torkelo/influxdb
