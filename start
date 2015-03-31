@@ -7,5 +7,5 @@ docker run -d \
 	-p 9083:8083 \
   -p 9086:8086 \
   -p 9004:2004 \
-  -v /var/docker/influxdb:/opt/influxdb/shared/data \
-  --name influxdb09 torkelo/influxdb
+  -v /var/docker/influxdb09:/opt/influxdb/shared/data \
+  --name influxdb09 torkelo/influxdb09

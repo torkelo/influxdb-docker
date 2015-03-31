@@ -4,8 +4,8 @@ FROM ubuntu
 
 RUN mkdir -p /opt/influxdb/shared/data
 
-ADD http://get.influxdb.org/influxdb_0.9.0-rc4_amd64.deb /influx94.deb
-RUN dpkg -i /influx94.deb
+ADD http://get.influxdb.org/influxdb_0.9.0-rc16_amd64.deb /influx916.deb
+RUN dpkg -i /influx916.deb
 RUN rm -rf /opt/influxdb/shared/data
 
 ADD config.toml /opt/influxdb/shared/config.toml
