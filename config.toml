@@ -1,5 +1,8 @@
 bind-address = "0.0.0.0"
 
+[meta]
+dir = "/data/meta"
+
 [initialization]
 join-urls = "" # Comma-delimited URLs, in the form http://host:port, for joining another cluster.
 
@@ -38,3 +41,13 @@ port = 8086
 [cluster]
 dir = "/opt/influxdb/data/state"
 
+[continuous_queries]
+  recompute-previous-n = 2
+  recompute-no-older-than = "10m0s"
+  compute-runs-per-interval = 10
+  compute-no-more-than = "2m0s"
+  disabled = false
+
+[hinted-handoff]
+  enabled = true
+  dir = "/data/hh"
