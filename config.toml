@@ -7,7 +7,10 @@ dir = "/data/meta"
 join-urls = "" # Comma-delimited URLs, in the form http://host:port, for joining another cluster.
 
 [authentication]
-enabled = false
+enabled = true
+
+[http]
+auth-enabled = true
 
 [logging]
 file   = "/opt/influxdb/shared/data/influxdb.log"
