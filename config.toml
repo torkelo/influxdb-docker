@@ -36,6 +36,9 @@ port = 8086
   dir = "/opt/influxdb/data/db"
   port = 8086
 
+  wal-dir = "/opt/influxdb/data/wal"
+  wal-enable-logging = true
+
   # Control whether retention policies are enforced and how long the system waits between
   # enforcing those policies.
   retention-check-enabled = true
