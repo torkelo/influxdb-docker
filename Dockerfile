@@ -4,8 +4,8 @@ FROM ubuntu
 
 RUN mkdir -p /opt/influxdb/shared/data
 
-ADD https://s3.amazonaws.com/influxdb/influxdb_0.9.5.1_amd64.deb /influx951.deb
-RUN dpkg -i /influx951.deb
+ADD https://s3.amazonaws.com/influxdb/influxdb_0.9.6.1_amd64.deb /influxdb.deb
+RUN dpkg -i influxdb.deb
 
 RUN rm -rf /opt/influxdb/shared/data
 
